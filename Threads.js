@@ -69,7 +69,7 @@ class ThreadMaster {
   }
 
   getThread(id) {
-    if (!this.threads.has(id)) new Error(`no thread with id '${id}' exists`)
+    if (!this.threads.has(id)) new ReferenceError(`no thread with id '${id}' exists`)
     return this.threads.get(id);
   }
 
@@ -81,7 +81,7 @@ class ThreadMaster {
   }
 
   deleteThread(id) {
-    if (!this.threads.has(id)) new Error(`no thread with id '${id}' exists`);
+    if (!this.threads.has(id)) new ReferenceError(`no thread with id '${id}' exists`);
     this.threads.delete(id);
   }
 
