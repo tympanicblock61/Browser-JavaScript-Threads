@@ -34,6 +34,6 @@ You can create and start Threads without `ThreadMaster`.
 - `startAll()`: Starts all Threads.
 - `stopAll()`: Stops all Threads.
 
-## extra functions
+## Extra Functions
 - `guidGenerator()`: generates a version 4 GUID.
 - `freezeProp(obj, prop)`: freezes a property (prop) on an object (obj), rendering it immutable and preventing any modifications or deletions.
