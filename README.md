@@ -1,6 +1,6 @@
 # Browser JavaScript Threads
 
-Includes classes: `Thread`, `ThreadMaster`  
+Includes classes: `Thread`, `ThreadMaster`
 `ThreadMaster` is a Thread manager.  
 You can create and start Threads without `ThreadMaster`.
 
@@ -33,3 +33,7 @@ You can create and start Threads without `ThreadMaster`.
 - `stop(id)`: Stops a Thread using its id; throws a ReferenceError if no Thread with that id exists.
 - `startAll()`: Starts all Threads.
 - `stopAll()`: Stops all Threads.
+
+## extra functions
+- `guidGenerator()`: generates a version 4 GUID.
+- `freezeProp(obj, prop)`: freezes a property (prop) on an object (obj), rendering it immutable and preventing any modifications or deletions.
